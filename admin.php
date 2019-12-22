@@ -53,7 +53,7 @@ switch ($cmd) {
 	case 'Delete':
 	if (is_array ($c)) {
 		foreach ($c as $key => $val) 
-			mysqli_query ($conn, "delete from book where id='$key'");
+			pg_query($conn, "delete from book where id='$key'");
 	} else
 	$errmess = 'At least 1 line must be marked';
 	break;
@@ -62,8 +62,8 @@ switch ($cmd) {
 	break;
 	default:
 	if ($rb!='' && $id!=$rb) {
-		$kq = mysqli_query ($conn, "select * from book where id='$rb'");
-		$r = mysqli_fetch_array ($kq);
+		$kq = pg_query($conn, "select * from book where id='$rb'");
+		$r = pg_fetch_assoc($kq);
 		$id = $r['id'];
 		$id_kind = $r['id_kindbook'];
 		$name = $r['bookname'];
@@ -155,8 +155,8 @@ switch ($cmd) {
 					<tbody>
 					<?php
 					$ci = 1;
-					$kq = mysqli_query ($conn, "select * from book $where");
-					while ($r = mysqli_fetch_array ($kq)) {
+					$kq = pg_query($conn, "select * from book $where");
+					while ($r = pg_fetch_assoc($kq)) {
 						echo "<tr align='center'><td>$ci</td>";
 						echo "<td><input type='checkbox' name='c[{$r['id']}]' value='1' /></td>";
 						$chk = $rb==$r['id'] ? 'checked' : '';
@@ -178,19 +178,19 @@ switch ($cmd) {
 	<?php
 	function add_book () {
 		global $conn, $id, $id_kind, $name, $price, $author, $publish, $description, $image, $errmess;
-		$query = mysqli_query($conn, "select * from book where id='$id'");
-		if (mysqli_num_rows($query)>0)
+		$query = pg_query($conn, "select * from book where id='$id'");
+		if (pg_num_rows($query)>0)
 			$errmess = "ID existed";
 		else 
-			mysqli_query ($conn, "insert into book values ('$id', '$id_kind', '$name', '$price', '$author', '$publish', '$description', '$image')");
+			pg_query($conn, "insert into book values ('$id', '$id_kind', '$name', '$price', '$author', '$publish', '$description', '$image')");
 	}
 
 	function update_book () {
 		global $conn, $rb, $id, $id_kind, $name, $price, $author, $publish, $description, $image, $errmess;
-		$query = mysqli_query($conn, "select * from book where id='$id'");
-		$queryrb = mysqli_query($conn, "select * from book where id='$rb'");
+		$query = pg_query($conn, "select * from book where id='$id'");
+		$queryrb = pg_query($conn, "select * from book where id='$rb'");
 		if($id==$rb || !$queryrb)
-			mysqli_query ($conn, "update book set id='$id', id_kindbook='$id_kind', bookname='$name', price = '$price', author = '$author', publish = '$publish', bookdescription = '$description', img = '$image' where id='$rb'");
+			pg_query($conn, "update book set id='$id', id_kindbook='$id_kind', bookname='$name', price = '$price', author = '$author', publish = '$publish', bookdescription = '$description', img = '$image' where id='$rb'");
 			else
 				$errmess = 'Fail to update';
 		}

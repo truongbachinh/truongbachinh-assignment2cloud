@@ -1,7 +1,7 @@
 <?php
 $sql_book="select * from book where id=$_GET[id]";
-$query_book=mysqli_query($conn, $sql_book);
-$line_book=mysqli_fetch_array($query_book, MYSQLI_ASSOC);
+$query_book=pg_query($conn, $sql_book);
+$line_book=pg_fetch_assoc($query_book);
 ?>
 
 <form action="index.php" method="post" enctype="multipart/form-data">

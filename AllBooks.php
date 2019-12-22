@@ -1,13 +1,13 @@
 <?php 
 $sql_all="select * from book";
-$query_all=mysqli_query($conn, $sql_all);
+$query_all=pg_query($conn, $sql_all);
 ?>
 <p style="background: #e6e6e6; padding: 10px; border-left: 5px solid blue; font-weight: bold; font-size: 18px;">
 	All Of Books
 	</p>
 <div class="row">
 	<?php
-	while ($line_all=mysqli_fetch_array($query_all, MYSQLI_ASSOC)) {
+	while ($line_all=pg_fetch_assoc($query_all)) {
 		?>
 		<div style="padding: 10px">
 			<div class="card align-items-center" style="width: 300px; text-align: center;">

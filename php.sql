@@ -1,22 +1,17 @@
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
 CREATE TABLE book (
-id INT NOT NULL AUTO_INCREMENT,
+id SERIAL,
 id_kindbook INT NOT NULL,
 bookname VARCHAR(255) NOT NULL,
-price INT(100) NOT NULL,
+price INT NOT NULL,
 author VARCHAR(255) NOT NULL,
 publish VARCHAR(255) NOT NULL,
 bookdescription VARCHAR(510) NOT NULL,
 img VARCHAR(255) NOT NULL,
 PRIMARY KEY (id)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
-INSERT INTO `book` (`id_kindbook`, `bookname`, `price`, `author`, `publish`, `bookdescription`, `img`) VALUES
+INSERT INTO book (id_kindbook, bookname, price, author, publish, bookdescription, img) VALUES
 (1, 'Harry Potter Box Set: The Complete Collection', 2030000, 'J. K. Rowling', 'ArtBook', 'A beautiful boxed set containing all seven Harry Potter novels in paperback. These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers.', 'Harry-Potter-Box-Set.jpg'),
 (1, 'The Alchemist', 820000, 'Paulo Coelho', 'ArtBook', 'Every few decades a book is published that changes the lives of its readers forever. This is such a book ? a magical fable about learning to listen to your heart, read the omens strewn along life?s path and, above, all follow your dreams.', 'The-Alchemist.jpg'),
 (1, 'Oxf Advanced AM Dict Pk', 442000, 'Unknown', 'Oxford University Press', 'Oxfords new American Dictionaries for learners of English offer students a dictionary that is just right for their level. Written specifically for students working to improve their English language skills, these dictionaries support English learners, struggling readers, and special education students...', 'Oxf.jpg'),
@@ -29,12 +24,12 @@ INSERT INTO `book` (`id_kindbook`, `bookname`, `price`, `author`, `publish`, `bo
 (2, 'Chiến Lược Mở Rộng Kinh Doanh Từ Cốt Lõi', 87000, 'Chris Zook', 'Nxb Công Thương', 'Công ty thành công nào cũng có một chiến lược cốt lõi thành công. Nhưng nhu cầu, khả năng và kế hoạch phát triển đòi hỏi những công ty đó phải thực hiện nhiều hơn một chiến lược cốt lõi. Trong cuốn sách Chiến lược mở rộng kinh doanh từ cốt lõi, chiến lược gia Chris Zook đã tiết lộ cách để tăng lợi nhuận bằng việc tập trung và đạt được tiềm năng đầy đủ trong kinh doanh cốt lõi; đồng thời phác thảo một chiến lược mở rộng liên quan chặt chẽ đến công việc kinh doanh cốt lõi.', 'chien-luoc.jpg');
 
 CREATE TABLE kindbook (
-id INT NOT NULL AUTO_INCREMENT,
+id SERIAL,
 kindbook VARCHAR(255) NOT NULL,
 PRIMARY KEY (id)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
-INSERT INTO `kindbook` (`kindbook`) VALUES
+INSERT INTO kindbook (kindbook) VALUES
 ('Sách Ngoại Văn'),
 ('Sách Kinh Tế'),
 ('Sách Văn Học Trong Nước'),
@@ -47,11 +42,11 @@ INSERT INTO `kindbook` (`kindbook`) VALUES
 ('Sách Giáo Khoa - Giáo Trình');
 
 CREATE TABLE admin (
-id INT NOT NULL AUTO_INCREMENT,
+id SERIAL,
 username VARCHAR(255) NOT NULL,
 password VARCHAR(255) NOT NULL,
 PRIMARY KEY (id)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 
-INSERT INTO `admin` (`username`, `password`) VALUES
+INSERT INTO admin (username, password) VALUES
 ('chinhtb', '123456');

@@ -57,8 +57,8 @@
 					echo "<script type='text/javascript'>alert('Username hoặc Password bạn không được để trống!')</script>";
 				} else {
 					$sql = "select * from admin where username = '$username' and password = '$password'";
-					$query = mysqli_query($conn,$sql);
-					if (mysqli_num_rows($query)==0) {
+					$query = pg_query($conn,$sql);
+					if (pg_num_rows($query)==0) {
 						echo "<script type='text/javascript'>alert('username or password is incorrect.')</script>";
 					} else {
 						header('Location: admin.php');

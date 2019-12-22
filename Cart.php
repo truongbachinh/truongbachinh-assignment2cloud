@@ -21,8 +21,8 @@
 					$i=1;
 					foreach ($array as $value) {
 						$sql_buy="select * from book where id = '$value'";
-						$query_buy=mysqli_query($conn, $sql_buy);
-						$line=mysqli_fetch_array($query_buy, MYSQLI_ASSOC);
+						$query_buy=pg_query($conn, $sql_buy);
+						$line=pg_fetch_assoc($query_buy);
 						?>
 						<tr>
 							<td><?php echo $i++ ?></td>

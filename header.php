@@ -3,7 +3,7 @@
 
 	<h3 style="color: red">Hotline: 0965.560.564 </h3>
 	<div style="text-align: center;">
-		<!-- <h4>Admin Login</h4>
+		<h4>Admin Login</h4>
 		<form action="index.php" method="post">
 			<div class="row align-items-center">
 				<div style="margin-right: 31px">
@@ -22,8 +22,8 @@
 				</div>
 			</div>
 			<button type="submit" class="btn btn-success" name="login">Login</button>
-		</form> -->
-		  <input type="button" id="btnLogin" value="Login with Google"> 
+		</form>
+		  <!-- <input type="button" id="btnLogin" value="Login with Google"> 
     <script>
         $('#btnLogin').on('click',loginClicked);
         function   loginClicked(){
@@ -34,7 +34,7 @@
                 }
             })
         }
-    </script>
+    </script> -->
 
 	</div>          
 </div>
