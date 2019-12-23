@@ -12,7 +12,7 @@
 				<a href="index.php?xem=search&idl=6" class="list-group-item list-group-item-action">Teddy Bear</a>
 				<a href="index.php?xem=search&idl=7" class="list-group-item list-group-item-action">Dolls</a>
 				<a href="index.php?xem=search&idl=8" class="list-group-item list-group-item-action">Spinning toys</a>
-				<a href="index.php?xem=search&idl=9" class="list-group-item list-group-item-action">Wooden toys</a>
+				<a href="index.php?xem=search&idl=9" class="list-group-item list-group-item-action">Hot toys</a>
 				<a href="index.php?xem=search&idl=10" class="list-group-item list-group-item-action">Best sellers toys</a>
 			</div>
 		</div>
