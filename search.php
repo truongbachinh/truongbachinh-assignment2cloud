@@ -33,7 +33,7 @@ if ($line_kind) { ?>
 <div class="row">
 	<?php 
 	if($count=pg_num_rows($query_search)==0) { ?>
-		<h4>No Books Found</h4>
+		<h4>No Toy Found</h4>
 		<?php 
 	}else{
 		?>

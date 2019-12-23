@@ -2,18 +2,18 @@
 	<div class="row">
 		
 		<div class="col-md-3" >
-		 <h1>list of toy</h1>
+		 <h1>List kind of toys</h1>
 			<div class="list-group">
-				<a href="index.php?xem=search&idl=1" class="list-group-item list-group-item-action">Book of Foreign Affairs</a>
-				<a href="index.php?xem=search&idl=2" class="list-group-item list-group-item-action">Economic Book</a>
-				<a href="index.php?xem=search&idl=3" class="list-group-item list-group-item-action">Literature Books In The Country</a>
-				<a href="index.php?xem=search&idl=4" class="list-group-item list-group-item-action">Foreign Literature Books</a>
-				<a href="index.php?xem=search&idl=5" class="list-group-item list-group-item-action">Books Of Social Life</a>
-				<a href="index.php?xem=search&idl=6" class="list-group-item list-group-item-action">Children's Books</a>
-				<a href="index.php?xem=search&idl=7" class="list-group-item list-group-item-action">Self Development Book</a>
-				<a href="index.php?xem=search&idl=8" class="list-group-item list-group-item-action">Computer Books - Foreign Languages</a>
-				<a href="index.php?xem=search&idl=9" class="list-group-item list-group-item-action">Specialized Book</a>
-				<a href="index.php?xem=search&idl=10" class="list-group-item list-group-item-action">Textbook</a>
+				<a href="index.php?xem=search&idl=1" class="list-group-item list-group-item-action">Educational toys</a>
+				<a href="index.php?xem=search&idl=2" class="list-group-item list-group-item-action">Construction toys</a>
+				<a href="index.php?xem=search&idl=3" class="list-group-item list-group-item-action">Verhicle toys</a>
+				<a href="index.php?xem=search&idl=4" class="list-group-item list-group-item-action">Wooden toys</a>
+				<a href="index.php?xem=search&idl=5" class="list-group-item list-group-item-action">Sound toys</a>
+				<a href="index.php?xem=search&idl=6" class="list-group-item list-group-item-action">Teddy Bear</a>
+				<a href="index.php?xem=search&idl=7" class="list-group-item list-group-item-action">Dolls</a>
+				<a href="index.php?xem=search&idl=8" class="list-group-item list-group-item-action">Spinning toys</a>
+				<a href="index.php?xem=search&idl=9" class="list-group-item list-group-item-action">Wooden toys</a>
+				<a href="index.php?xem=search&idl=10" class="list-group-item list-group-item-action">Best sellers toys</a>
 			</div>
 		</div>
 		<div class="col-md-9">

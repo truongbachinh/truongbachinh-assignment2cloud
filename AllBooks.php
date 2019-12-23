@@ -3,7 +3,7 @@ $sql_all="select * from book";
 $query_all=pg_query($conn, $sql_all);
 ?>
 <p style="background: #e6e6e6; padding: 10px; border-left: 5px solid blue; font-weight: bold; font-size: 18px;">
-	All Of Books
+	All of Toys
 	</p>
 <div class="row">
 	<?php

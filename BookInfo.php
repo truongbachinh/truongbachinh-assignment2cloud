@@ -19,7 +19,7 @@ $line_book=pg_fetch_assoc($query_book);
       <button type="submit" class="btn btn-success" name="buy" value="<?php echo $_GET['id'] ?>">Add to your cart</button>
     </div>
     <div class="col-md-7" style="text-align: center;">
-      <h4>Book Information</h4>
+      <h4>Toy Information</h4>
       <br>
       <table class="table table-hover">
         <tbody>
