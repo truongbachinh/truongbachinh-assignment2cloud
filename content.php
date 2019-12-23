@@ -2,9 +2,8 @@
 	<div class="row">
 		
 		<div class="col-md-3" >
-		 
+		 <h1>List Kind of Toys</h1>
 			<div class="list-group">
-				<h1>LIST KIND OF TOYS</h1>
 				<a href="index.php?xem=search&idl=1" class="list-group-item list-group-item-action">Educational toys</a>
 				<a href="index.php?xem=search&idl=2" class="list-group-item list-group-item-action">Construction toys</a>
 				<a href="index.php?xem=search&idl=3" class="list-group-item list-group-item-action">Verhicle toys</a>
