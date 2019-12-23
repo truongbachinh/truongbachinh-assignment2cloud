@@ -23,18 +23,7 @@
 			</div>
 			<button type="submit" class="btn btn-success" name="login">Login</button>
 		</form>
-		  <!-- <input type="button" id="btnLogin" value="Login with Google"> 
-    <script>
-        $('#btnLogin').on('click',loginClicked);
-        function   loginClicked(){
-            var provider = new firebase.auth.GoogleAuthProvider();
-            firebase.auth().signInWithPopup(provider).then(result=>{
-                if(result !=null){
-                    window.location.replace('admin.php');
-                }
-            })
-        }
-    </script> -->
+		  
 
 	</div>          
 </div>
