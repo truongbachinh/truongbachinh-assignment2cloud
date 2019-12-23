@@ -11,7 +11,7 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/atnlogo.jpg" alt="Los Angeles" height=”294″ width=”885″>
+      <img src="images/atnlogo.jpg" alt="Los Angeles" height=”294px″ width=”885px″>
     </div>
     <div class="carousel-item">
       <img src="images/ad2.jpg" alt="Chicago">
