@@ -2,6 +2,7 @@
 	<div class="row">
 		
 		<div class="col-md-3" >
+		 <h1>list of toy</h1>
 			<div class="list-group">
 				<a href="index.php?xem=search&idl=1" class="list-group-item list-group-item-action">Book of Foreign Affairs</a>
 				<a href="index.php?xem=search&idl=2" class="list-group-item list-group-item-action">Economic Book</a>
