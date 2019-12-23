@@ -1,4 +1,4 @@
-<div class="row align-items-center" style="justify-content: space-between; padding: 20px; height: 210px">
+<!-- <div class="row align-items-center" style="justify-content: space-between; padding: 20px; height: 210px">
 	<a href="index.php"><img src="images/atnlogo.jpg" style="height: 180px"></a>
 
 	<h3 style="color: red">Hotline: 0965.560.564 </h3>
@@ -27,4 +27,4 @@
 
 	</div>          
 </div>
-
+ -->
