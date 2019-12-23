@@ -4,16 +4,16 @@
 		<div class="col-md-3" >
 		 <h1>List Kind of Toys</h1>
 			<div class="list-group">
-				<a href="index.php?xem=search&idl=1" class="list-group-item list-group-item-action">Educational toys</a>
-				<a href="index.php?xem=search&idl=2" class="list-group-item list-group-item-action">Construction toys</a>
-				<a href="index.php?xem=search&idl=3" class="list-group-item list-group-item-action">Verhicle toys</a>
-				<a href="index.php?xem=search&idl=4" class="list-group-item list-group-item-action">Wooden toys</a>
-				<a href="index.php?xem=search&idl=5" class="list-group-item list-group-item-action">Sound toys</a>
+				<a href="index.php?xem=search&idl=1" class="list-group-item list-group-item-action">Educational Toys</a>
+				<a href="index.php?xem=search&idl=2" class="list-group-item list-group-item-action">Construction Toys</a>
+				<a href="index.php?xem=search&idl=3" class="list-group-item list-group-item-action">Verhicle Toys</a>
+				<a href="index.php?xem=search&idl=4" class="list-group-item list-group-item-action">Wooden Toys</a>
+				<a href="index.php?xem=search&idl=5" class="list-group-item list-group-item-action">Sound Toys</a>
 				<a href="index.php?xem=search&idl=6" class="list-group-item list-group-item-action">Teddy Bear</a>
 				<a href="index.php?xem=search&idl=7" class="list-group-item list-group-item-action">Dolls</a>
-				<a href="index.php?xem=search&idl=8" class="list-group-item list-group-item-action">Spinning toys</a>
-				<a href="index.php?xem=search&idl=9" class="list-group-item list-group-item-action">Hot toys</a>
-				<a href="index.php?xem=search&idl=10" class="list-group-item list-group-item-action">Best sellers toys</a>
+				<a href="index.php?xem=search&idl=8" class="list-group-item list-group-item-action">Spinning Toys</a>
+				<a href="index.php?xem=search&idl=9" class="list-group-item list-group-item-action">Hot Toys</a>
+				<a href="index.php?xem=search&idl=10" class="list-group-item list-group-item-action">Best Sellers Toys</a>
 			</div>
 		</div>
 		<div class="col-md-9">
