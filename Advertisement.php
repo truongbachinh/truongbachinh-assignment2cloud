@@ -14,10 +14,10 @@
       <img src="images/atnlogo.jpg" alt="Los Angeles" height="294" width="885">
     </div>
     <div class="carousel-item">
-      <img src="images/ad2.jpg" alt="Chicago">
+      <img src="images/adtoy.PNG" alt="Chicago" height="294" width="885">
     </div>
     <div class="carousel-item">
-      <img src="images/ad4.png" alt="Vietnam">
+      <img src="images/adtoy1.PNG" alt="Vietnam" height="294" width="885">
     </div>
   </div>
 
