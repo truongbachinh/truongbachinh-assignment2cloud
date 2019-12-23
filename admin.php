@@ -96,7 +96,7 @@ switch ($cmd) {
 	<div style="text-align: center;">
 	<form name='book' method='post' action='admin.php'>
 		<a href="index.php" style="float: right;">Logout</a>
-		<h1>UPDATE BOOK</h1><hr />'
+		<h1>UPDATE TOY</h1><hr />'
 		<div style="padding: 50px">
 			<table class="table table-borderless">
 				<tr>
@@ -108,7 +108,7 @@ switch ($cmd) {
 					<td><input type='text' class="form-control" name='id_kind' value='<?php echo $id_kind ?>'></td>
 				</tr>
 				<tr>
-					<td>Book Title:</td>
+					<td>Toy Title:</td>
 					<td><input type='text' class="form-control" name='name' value='<?php echo $name ?>'></td>
 				</tr>
 				<tr>
@@ -149,7 +149,7 @@ switch ($cmd) {
 							<td width="7%"> Delete</td>
 							<td width="7%">Update</td>
 							<td width="14%">ID</td>
-							<td width="60%">Book Title</td>
+							<td width="60%">Toy Title</td>
 						</tr>
 					</thead>
 					<tbody>

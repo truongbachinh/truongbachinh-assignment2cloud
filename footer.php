@@ -2,9 +2,9 @@
 		<div class="footer">
 			<div class="row">
 				<div class="col-md-3">
-					<h6 style="margin-left: 20px" >Information Chinhtb BookStore</h6>
+					<h6 style="margin-left: 20px" >Information ATN Store</h6>
 					<ul>
-						<li><a href="#">Introduce Chinhtb BookStore</a></li>
+						<li><a href="#">Introduce ATN Store</a></li>
 						<li><a href="#">Supermarket system</a></li>
 					</ul>
 				</div>

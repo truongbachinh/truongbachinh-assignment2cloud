@@ -10,7 +10,7 @@
 				<thead>
 					<tr>
 						<th>NO.</th>
-						<th>Book Title</th>
+						<th>Toy Title</th>
 						<th>Image</th>
 						<th>Amount</th>
 						<th>Price (VND)</th>
