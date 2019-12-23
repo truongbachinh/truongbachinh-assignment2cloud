@@ -11,13 +11,13 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/atnlogo.jpg" alt="Los Angeles" height="300" width="900">
+      <img src="images/atnlogo.jpg" alt="Los Angeles" height="350" width="1050">
     </div>
     <div class="carousel-item">
-      <img src="images/adtoy.PNG" alt="Chicago" height="300px" width="900px">
+      <img src="images/adtoy.PNG" alt="Chicago" height="350px" width="1050px">
     </div>
     <div class="carousel-item">
-      <img src="images/adtoy2.PNG" alt="Vietnam" height="300px" width="900px">
+      <img src="images/adtoy2.PNG" alt="Vietnam" height="350px" width="1050px">
     </div>
   </div>
 
