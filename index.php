@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ChinhTB BookStore</title>
+	<title>ChinhTB toyStore</title>
 	<meta http-equiv='content-type' content='charset=utf-8'>
 
 	<!-- Latest compiled and minified CSS -->

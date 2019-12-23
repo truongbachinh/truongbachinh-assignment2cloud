@@ -32,8 +32,8 @@
 			}
 			if(isset($_POST['searchButton']) || $t=='search'){
 				include('search.php');
-			}elseif($t=='BookInfo'){
-				include('BookInfo.php');
+			}elseif($t=='ToyInfo'){
+				include('ToyInfo.php');
 			}elseif(isset($_POST['buy']) || isset($_POST['cart'])){
 				if(isset($_POST['buy'])) {
 					array_push($array, $_POST['buy']);
@@ -42,7 +42,7 @@
 				include('Cart.php');
 			}else{					
 				include('Advertisement.php');
-				include('AllBooks.php');
+				include('AllToys.php');
 			}
 
 					

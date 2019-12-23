@@ -3,7 +3,7 @@ include('config.php');
 
 $errmess="";
 $where="";
-$id = $id_kind = $name = $price = $author = $publish = $description = $image = $rb = $c = $cmd = "";
+$id = $id_kind = $name = $price = $brand = $made = $description = $image = $rb = $c = $cmd = "";
 if(isset($_POST['id'])) {
 	$id = $_POST['id'];
 }
@@ -16,11 +16,11 @@ if(isset($_POST['name'])) {
 if(isset($_POST['price'])) {
 	$price = $_POST['price'];
 }
-if(isset($_POST['author'])) {
-	$author = $_POST['author'];
+if(isset($_POST['brand'])) {
+	$brand = $_POST['brand'];
 }
-if(isset($_POST['publish'])) {
-	$publish = $_POST['publish'];
+if(isset($_POST['made'])) {
+	$made = $_POST['made'];
 }
 if(isset($_POST['description'])) {
 	$description = $_POST['description'];
@@ -44,36 +44,36 @@ switch ($cmd) {
 		break;
 	} else {
 		if ($rb)
-			update_book ();
+			update_toy ();
 		else
-			add_book ();
-		$rb = $id = $id_kind = $name = $price = $author = $publish = $description = $image = ''; 
+			add_toy ();
+		$rb = $id = $id_kind = $name = $price = $brand = $made = $description = $image = ''; 
 		break;
 	}
 	case 'Delete':
 	if (is_array ($c)) {
 		foreach ($c as $key => $val) 
-			pg_query($conn, "delete from book where id='$key'");
+			pg_query($conn, "delete from toy where id='$key'");
 	} else
 	$errmess = 'At least 1 line must be marked';
 	break;
 	case 'Search':
-	$where = " where id like '%$id%' and id_kindbook like '%$id_kind%' and bookname like '%$name%' and author like '%$author%' and publish like '%$publish%' and bookdescription like '%$description%' and img like '%$image%'";
+	$where = " where id like '%$id%' and id_kindtoy like '%$id_kind%' and toyname like '%$name%' and brand like '%$brand%' and made like '%$made%' and toydescription like '%$description%' and img like '%$image%'";
 	break;
 	default:
 	if ($rb!='' && $id!=$rb) {
-		$kq = pg_query($conn, "select * from book where id='$rb'");
+		$kq = pg_query($conn, "select * from toy where id='$rb'");
 		$r = pg_fetch_assoc($kq);
 		$id = $r['id'];
-		$id_kind = $r['id_kindbook'];
-		$name = $r['bookname'];
+		$id_kind = $r['id_kindtoy'];
+		$name = $r['toyname'];
 		$price = $r['price'];
-		$author = $r['author'];
-		$publish = $r['publish'];
-		$description = $r['bookdescription'];
+		$brand = $r['brand'];
+		$made = $r['made'];
+		$description = $r['toydescription'];
 		$image = $r['img'];
 	} else
-	$rb = $id = $id_kind = $name = $price = $author = $publish = $description = $image = ''; 
+	$rb = $id = $id_kind = $name = $price = $brand = $made = $description = $image = ''; 
 	break;
 }
 ?>
@@ -94,7 +94,7 @@ switch ($cmd) {
 </head>
 <body>
 	<div style="text-align: center;">
-	<form name='book' method='post' action='admin.php'>
+	<form name='toy' method='post' action='admin.php'>
 		<a href="index.php" style="float: right;">Logout</a>
 		<h1>UPDATE TOY</h1><hr />'
 		<div style="padding: 50px">
@@ -116,12 +116,12 @@ switch ($cmd) {
 					<td><input type='text' class="form-control" name='price' value='<?php echo $price ?>'></td>
 				</tr>
 				<tr>
-					<td>Author:</td>
-					<td><input type='text' class="form-control" name='author' value='<?php echo $author ?>'></td>
+					<td>Brand:</td>
+					<td><input type='text' class="form-control" name='brand' value='<?php echo $brand ?>'></td>
 				</tr>
 				<tr>
-					<td>Publish:</td>
-					<td><input type='text' class="form-control" name='publish' value='<?php echo $publish ?>'></td>
+					<td>Made:</td>
+					<td><input type='text' class="form-control" name='made' value='<?php echo $made ?>'></td>
 				</tr>
 				<tr>
 					<td>Description:</td>
@@ -155,14 +155,14 @@ switch ($cmd) {
 					<tbody>
 					<?php
 					$ci = 1;
-					$kq = pg_query($conn, "select * from book $where");
+					$kq = pg_query($conn, "select * from toy $where");
 					while ($r = pg_fetch_assoc($kq)) {
 						echo "<tr align='center'><td>$ci</td>";
 						echo "<td><input type='checkbox' name='c[{$r['id']}]' value='1' /></td>";
 						$chk = $rb==$r['id'] ? 'checked' : '';
 						echo "<td><input type='radio' name='rb' value='{$r['id']}' onClick='submit()' $chk /></td>";
 						echo "<td>{$r['id']}</td>";
-						echo "<td align='left'>{$r['bookname']}</td></tr>";
+						echo "<td align='left'>{$r['toyname']}</td></tr>";
 						$ci++;
 					}
 
@@ -176,21 +176,21 @@ switch ($cmd) {
 	</html>
 
 	<?php
-	function add_book () {
-		global $conn, $id, $id_kind, $name, $price, $author, $publish, $description, $image, $errmess;
-		$query = pg_query($conn, "select * from book where id='$id'");
+	function add_toy () {
+		global $conn, $id, $id_kind, $name, $price, $brand, $made, $description, $image, $errmess;
+		$query = pg_query($conn, "select * from toy where id='$id'");
 		if (pg_num_rows($query)>0)
 			$errmess = "ID existed";
 		else 
-			pg_query($conn, "insert into book values ('$id', '$id_kind', '$name', '$price', '$author', '$publish', '$description', '$image')");
+			pg_query($conn, "insert into toy values ('$id', '$id_kind', '$name', '$price', '$brand', '$made', '$description', '$image')");
 	}
 
-	function update_book () {
-		global $conn, $rb, $id, $id_kind, $name, $price, $author, $publish, $description, $image, $errmess;
-		$query = pg_query($conn, "select * from book where id='$id'");
-		$queryrb = pg_query($conn, "select * from book where id='$rb'");
+	function update_toy () {
+		global $conn, $rb, $id, $id_kind, $name, $price, $brand, $made, $description, $image, $errmess;
+		$query = pg_query($conn, "select * from toy where id='$id'");
+		$queryrb = pg_query($conn, "select * from toy where id='$rb'");
 		if($id==$rb || !$queryrb)
-			pg_query($conn, "update book set id='$id', id_kindbook='$id_kind', bookname='$name', price = '$price', author = '$author', publish = '$publish', bookdescription = '$description', img = '$image' where id='$rb'");
+			pg_query($conn, "update toy set id='$id', id_kindtoy='$id_kind', toyname='$name', price = '$price', brand = '$brand', made = '$made', toydescription = '$description', img = '$image' where id='$rb'");
 			else
 				$errmess = 'Fail to update';
 		}

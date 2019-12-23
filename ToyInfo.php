@@ -1,19 +1,19 @@
 <?php
-$sql_book="select * from book where id=$_GET[id]";
-$query_book=pg_query($conn, $sql_book);
-$line_book=pg_fetch_assoc($query_book);
+$sql_toy="select * from toy where id=$_GET[id]";
+$query_toy=pg_query($conn, $sql_toy);
+$line_toy=pg_fetch_assoc($query_toy);
 ?>
 
 <form action="index.php" method="post" enctype="multipart/form-data">
   <hr>
   <div class="row">
     <div class="col-md-5" style="text-align: center;">
-      <img src="images/<?php echo $line_book['img'] ?>" style="width: 300px" class="mx-auto d-block">
+      <img src="<?php echo $line_toy['img'] ?>" style="width: 300px" class="mx-auto d-block">
       <br><br>
-      <h5><b><?php echo $line_book['bookname'] ?></b></h5>
+      <h5><b><?php echo $line_toy['toyname'] ?></b></h5>
       <br>
       <h5 style="color: red;">
-        <?php echo $line_book['price'].'VND' ?>
+        <?php echo $line_toy['price'].'VND' ?>
       </h5>
       <br>
       <button type="submit" class="btn btn-success" name="buy" value="<?php echo $_GET['id'] ?>">Add to your cart</button>
@@ -24,16 +24,16 @@ $line_book=pg_fetch_assoc($query_book);
       <table class="table table-hover">
         <tbody>
           <tr>
-            <td width="30%">Author</td>
-            <td width="70%"><?php echo $line_book['author'] ?></td>
+            <td width="30%">brand</td>
+            <td width="70%"><?php echo $line_toy['brand'] ?></td>
           </tr>
           <tr>
-            <td>Publishing company</td>
-            <td><?php echo $line_book['publish'] ?></td>
+            <td>madeing company</td>
+            <td><?php echo $line_toy['made'] ?></td>
           </tr>
           <tr>
             <td>Introduce</td>
-            <td><?php echo $line_book['bookdescription'] ?></td>
+            <td><?php echo $line_toy['toydescription'] ?></td>
           </tr>
         </tbody>
       </table>

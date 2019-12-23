@@ -20,14 +20,14 @@
 					<?php
 					$i=1;
 					foreach ($array as $value) {
-						$sql_buy="select * from book where id = '$value'";
+						$sql_buy="select * from toy where id = '$value'";
 						$query_buy=pg_query($conn, $sql_buy);
 						$line=pg_fetch_assoc($query_buy);
 						?>
 						<tr>
 							<td><?php echo $i++ ?></td>
-							<td><?php echo $line['bookname'] ?></td>
-							<td><img src="images/<?php echo $line['img'] ?>" width="60" height="70"></td>
+							<td><?php echo $line['toyname'] ?></td>
+							<td><img src="<?php echo $line['img'] ?>" width="60" height="70"></td>
 							<td>1</td>
 							<td><?php echo $line['price'] ?></td>
 						</tr>

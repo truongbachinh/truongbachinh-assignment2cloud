@@ -2,7 +2,7 @@
 <?php 	 	 	
 $and="";
 if (isset($_GET['idl'])) {
-	$and="and id_kindbook='$_GET[idl]'";
+	$and="and id_kindtoy='$_GET[idl]'";
 }
 
 $searchText="";
@@ -10,12 +10,12 @@ if (isset($_POST['searchText'])) {
 	$searchText=$_POST['searchText'];
 }
 
-$sql_search="select * from book where bookname LIKE '%$searchText%' " . $and;
+$sql_search="select * from toy where toyname LIKE '%$searchText%' " . $and;
 $query_search=pg_query($conn, $sql_search);
 
 $line_kind="";
 if (isset($_GET['idl'])) {
-	$sql_kind="select * from kindbook where id='$_GET[idl]'";
+	$sql_kind="select * from kindtoy where id='$_GET[idl]'";
 	$query_kind=pg_query($conn, $sql_kind);
 	$line_kind=pg_fetch_assoc($query_kind);
 }
@@ -25,7 +25,7 @@ if (isset($_GET['idl'])) {
 
 <?php
 if ($line_kind) { ?>
-	<p style="background: #e6e6e6; padding: 10px; border-left: 5px solid blue; font-weight: bold; font-size: 18px;"><?php echo $line_kind['kindbook'] ?>
+	<p style="background: #e6e6e6; padding: 10px; border-left: 5px solid blue; font-weight: bold; font-size: 18px;"><?php echo $line_kind['kindtoy'] ?>
 	</p>
 <?php
 }
@@ -42,12 +42,12 @@ if ($line_kind) { ?>
 			?>
 			<div style="padding: 10px">
 				<div class="card align-items-center" style="width: 300px; text-align: center;">
-					<a href="index.php?xem=BookInfo&id=<?php echo $line_search['id'] ?>">
+					<a href="index.php?xem=ToyInfo&id=<?php echo $line_search['id'] ?>">
 						<div class="card-header">
-							<img src="images/<?php echo $line_search['img'] ?>" style="width: 250px">
+							<img src="<?php echo $line_search['img'] ?>" style="width: 250px">
 						</div>
 						<div class="card-body">
-							<p><?php echo $line_search['bookname'] ?></p>
+							<p><?php echo $line_search['toyname'] ?></p>
 						</div>
 						<div class="card-footer">
 							<span style="color: red; font-size: 14px;">
