@@ -44,7 +44,7 @@ if ($line_kind) { ?>
 				<div class="card align-items-center" style="width: 300px; text-align: center;">
 					<a href="index.php?xem=ToyInfo&id=<?php echo $line_search['id'] ?>">
 						<div class="card-header">
-							<img src="<?php echo $line_search['img'] ?>" style="width: 250px">
+							<img src="images/<?php echo $line_search['img'] ?>" style="width: 250px">
 						</div>
 						<div class="card-body">
 							<p><?php echo $line_search['toyname'] ?></p>
