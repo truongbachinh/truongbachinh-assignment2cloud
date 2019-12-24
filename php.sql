@@ -21,8 +21,8 @@ INSERT INTO toy (id_kindtoy, toyname, price, brand, made, toydescription, img) V
 (3, 'RC remote control aircraft model plastic toy', 240000, 'LY', 'Guangdong, China', 'Remote Control aircraft. From raw material sourcing - Injection - Semifinished Products - finished products,our professional QC Team control our products quality step by step.our professional testing lab insure our products meet intemational toys safety standards.', 'vehicleToy3.jpg'),
 (3, 'Control Motorcycle red six-wheeled Simulation RC CAR', 103000, 'LY', 'Guangdong, China', 'Window Box.', 'vehicleToy4.jpg'),
 (4, 'Baby Teether Teether Unique Design Educational Baby Wood', 71000, 'Wo Silicone', 'Guangdong, China', 'Carboard boxCustom Logo Natural Beech Wood baby car Toys Teether.', 'woodenToy1.jpg'),
-(4, 'Wooden Simulation Toolkit Kids DIY', 87000, 'MF', 'Zhejiang, China', 'Kid Building Block Toys.', 'woodenToy2.jpg');
-(4, 'ROKR Stem Toys Wooden 3D Mechanical Gears Driven Puzzle ', 2030000, 'Robotime', 'Jiangsu, China', 'Pendulum Clock.', 'woodenToy3.jpg'),
+(4, 'Wooden Simulation Toolkit Kids DIY', 87000, 'MF', 'Zhejiang, China', 'Kid Building Block Toys.', 'woondenToy2.png');
+(4, 'ROKR Stem Toys Wooden 3D Mechanical Gears Driven Puzzle ', 2030000, 'Robotime', 'Jiangsu, China', 'Pendulum Clock.', 'woonderToy3.png'),
 (5, 'Top sale new design voice changer speaker toy can makes boy,girl and robot sound ', 2030000, 'Shin Y', 'Guangdong, China', 'Speaker toys.', 'soundToy1.jpg'),
 (5, 'Instrument Kid Keyboard Sound Module Child Book Mini Musical Piano Music Toy ', 2030000, 'Shing Yip', 'China', 'Kids music instrument toy piano keyboard for sale.', 'soundToy2.jpg'),
 (6, 'Custom Stuffed Animal Cute Plush Teddy Bear in a Jacket', 2030000, 'Linkbrand', 'Guangdong, China', 'Brown or ivory.', 'beer1.jpg'),
