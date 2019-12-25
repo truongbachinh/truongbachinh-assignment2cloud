@@ -27,7 +27,7 @@
 						<tr>
 							<td><?php echo $i++ ?></td>
 							<td><?php echo $line['toyname'] ?></td>
-							<td><img src="images/<?php echo $line['img'] ?>" width="60" height="70"></td>
+							<td><img src="<?php echo $line['img'] ?>" width="60" height="70"></td>
 							<td>1</td>
 							<td><?php echo $line['price'] ?></td>
 						</tr>

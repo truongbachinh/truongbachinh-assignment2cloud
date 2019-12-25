@@ -8,7 +8,7 @@ $line_toy=pg_fetch_assoc($query_toy);
   <hr>
   <div class="row">
     <div class="col-md-5" style="text-align: center;">
-      <img src="images/<?php echo $line_toy['img'] ?>" style="width: 300px" class="mx-auto d-block">
+      <img src="<?php echo $line_toy['img'] ?>" style="width: 300px" class="mx-auto d-block">
       <br><br>
       <h5><b><?php echo $line_toy['toyname'] ?></b></h5>
       <br>
