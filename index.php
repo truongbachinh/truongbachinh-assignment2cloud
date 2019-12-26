@@ -45,7 +45,7 @@
 			<?php 
 			ob_start();
 			include('config.php');
-			include('header.php'); 
+			//include('header.php'); 
 			include('menu.php');						
 			?>
 	</div>	
