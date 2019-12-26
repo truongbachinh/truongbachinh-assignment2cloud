@@ -19,13 +19,8 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <!-- update the version number as needed -->
-    <script  src="/__/firebase/7.5.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script  src="/__/firebase/7.5.0/firebase-auth.js"></script>
-    <script  src="/__/firebase/7.5.0/firebase-database.js"></script>
-    <script  src="/__/firebase/7.5.0/firebase-messaging.js"></script>
-    <script  src="/__/firebase/7.5.0/firebase-storage.js"></script>
+     update the version number as needed -->
+   
     <!-- initialize the SDK after all desired features are loaded 
     <script  src="/__/firebase/init.js"></script> 
 
