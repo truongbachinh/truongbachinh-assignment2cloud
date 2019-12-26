@@ -40,11 +40,13 @@
 </br></br>
 <div class="row">
 	<div class="col-md-3">
-		<a href="index.php?xem=dangnhap"><button type="submit" class="btn btn-success" style="margin-left: 105px;">Proceed to order</button></a>
+		<a href="index.php?xem=dangnhap"><button type="submit" class="btn btn-success" style="margin-left: 105px;">Giáo Sư</button></a>
 	</div>
-
 	<div class="col-md-3">
-		<button type="submit" class="btn btn-success" name="cancel" style="margin-left: 132px;">Cancel the shopping cart</button>
+		<a href="index.php?xem=dangnhap"><button type="submit" class="btn btn-success" style="margin-left: 105px;">Love</button></a>
+	</div>
+	<div class="col-md-3">
+		<button type="submit" class="btn btn-success" name="cancel" style="margin-left: 132px;">Linh</button>
 	</div>
 </div>
 </form>
