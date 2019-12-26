@@ -27,7 +27,7 @@
     <script  src="/__/firebase/7.5.0/firebase-messaging.js"></script>
     <script  src="/__/firebase/7.5.0/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded 
-    <script  src="/__/firebase/init.js"></script> -->
+    <script  src="/__/firebase/init.js"></script> 
 
 
    
@@ -37,7 +37,7 @@
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	
 		
- 
+ -->
 	
 </head>
 <body>
