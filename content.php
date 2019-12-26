@@ -2,7 +2,7 @@
 	<div class="row">
 		
 		<div class="col-md-3" >
-		 <h1>List Kind of Toys</h1>
+		 <h1 style="background: #e6e6e6; padding: 10px; border-left: 5px solid blue; font-weight: bold; font-size: 36px;">List Kind of Toys</h1>
 			<div class="list-group">
 				<a href="index.php?xem=search&idl=1" class="list-group-item list-group-item-action">Educational Toys</a>
 				<a href="index.php?xem=search&idl=2" class="list-group-item list-group-item-action">Construction Toys</a>

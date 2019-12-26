@@ -17,7 +17,7 @@ INSERT INTO toy (id_kindtoy, toyname, price, brand, made, toydescription, img) V
 (1, 'ABCD alphebet extend machine learning toys', 2030000, 'ELETREE', 'Guangdong, China', 'Children Learning Gift.', 'educationToy1.jpg'),
 (1, 'Magnetic Alphabet toy for study', 820000, 'Rongou', 'Zhejiang, China', 'Color card OPP bag carton.', 'educationToy2.jpg'),
 (1, 'Oxf Advanced Alphabet learning toy', 442000, 'Innosma', 'Guangdong, China', 'Talking Pen with Cards Education Toy.', 'educationToy3.jpg'),
-(2, 'Constructor Toys Christmas Gift for building ', 216000, 'Artmag', 'Zhejiang, China', 'Safety,Durable, high transparency.', 'constructionToy1.jpg'),
+(2, 'Constructor Toys Christmas Gift for building ', 216000, 'Artmag', 'Zhejiang, China', 'Safety,Durable, high transparency.', 'constructionToy1.png'),
 (3, 'Thunderbolt police set of armored car toy', 234000, 'LY', 'Guangdong, China', 'Building Blocks Toys.', 'vehicleToy1.jpg'),
 (3, '4-channel CAR remote Control RC car toy', 470000, 'LY', 'Guangdong, China', 'Car six-wheeled Simulation good quality American Environmental Standards.', 'vehicleToy2.jpg'),
 (3, 'RC remote control aircraft model plastic toy', 240000, 'LY', 'Guangdong, China', 'Remote Control aircraft. From raw material sourcing - Injection - Semifinished Products - finished products,our professional QC Team control our products quality step by step.our professional testing lab insure our products meet intemational toys safety standards.', 'vehicleToy3.jpg'),
