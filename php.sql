@@ -14,7 +14,7 @@ PRIMARY KEY (id)
 );
 
 INSERT INTO toy (id_kindtoy, toyname, price, brand, made, toydescription, img) VALUES
-(1, 'ABCD alphebet extend machine learning toys', 2030000, 'ELETREE', 'Guangdong, China', 'Children Learning Gift.', 'https://drive.google.com/file/d/1vhh3imVC4rDf-B-49J_NTpxncrFaIFgt/view?usp=sharing'),
+(1, 'ABCD alphebet extend machine learning toys', 2030000, 'ELETREE', 'Guangdong, China', 'Children Learning Gift.', 'https://github.com/truongbachinh/truongbachinh-assignment2cloud/blob/master/images/educationToy1.jpg'),
 (1, 'Magnetic Alphabet toy for study', 820000, 'Rongou', 'Zhejiang, China', 'Color card OPP bag carton.', 'https://drive.google.com/open?id=1XX6oxCweCXb4SB-KCvjLfLrl-52VRX-b'),
 (1, 'Oxf Advanced Alphabet learning toy', 442000, 'Innosma', 'Guangdong, China', 'Talking Pen with Cards Education Toy.', 'https://drive.google.com/open?id=1Fa-8cuO15MCRbbaPsJx3hBNpfZ2Ved0R'),
 (2, 'Constructor Toys Christmas Gift for building ', 216000, 'Artmag', 'Zhejiang, China', 'Safety,Durable, high transparency.', 'https://drive.google.com/open?id=1DhC9CRG-Jdo9T5f_0WuMPG0JBRCDEzKp'),
