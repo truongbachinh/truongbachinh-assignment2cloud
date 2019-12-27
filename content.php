@@ -33,7 +33,7 @@
 			if(isset($_POST['searchButton']) || $t=='search'){
 				include('search.php');
 			}elseif(isset($_POST['loginWithGoogle'])){
-				header('Location: header.php');
+				header('Location: LoginAdmin.php');
 			}elseif($t=='ToyInfo'){
 				include('ToyInfo.php');
 			}elseif(isset($_POST['buy']) || isset($_POST['cart'])){
