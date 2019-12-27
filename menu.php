@@ -5,7 +5,9 @@
 			<input type="text" class="form-control" name="searchText" value="<?php if(isset($_POST['searchText'])) echo $_POST['searchText'] ?>" style="width: 750px">
 			<button type="submit" class="btn btn-success" name="searchButton">Search Toy</button>
 			<button type="submit" class="btn btn-success" name="cart">Your Cart</button>
-			<a href="header.php"><button type="submit" class="btn btn-success" name="loginWithGoogle">Login with Google</button>&nbsp;
+			<a href="index.php"><button type="submit" class="btn btn-success" name="loginWithGoogle">Login with Google
+
+			</button>&nbsp;
 		</form>
 	</div>
 </div>
