@@ -38,8 +38,8 @@
 	</div>
 
 </br></br>
-<div class="row">
-	<div class="col-md-3" style="text-align: center;">
+<div class="row" style="text-align: center;">
+	<div class="col-md-3" >
 		<a href="index.php?xem=dangnhap"><button type="submit" class="btn btn-success" style="margin-left: 105px;">Order</button></a>
 	</div>
 
