@@ -38,7 +38,6 @@
 	</div>
 
 </br></br>
-<div class="row" >
 	<div class="col-md-3" style="text-align: center;" >
 		<a href="index.php?xem=dangnhap"><button type="submit" class="btn btn-success" style="margin-left: 105px;">Order</button></a>
 	</div>
@@ -46,5 +45,5 @@
 	<div class="col-md-3">
 		<button type="submit" class="btn btn-success" name="cancel" style="margin-left: 132px;">Cancel</button>
 	</div>
-</div>
+
 </form>
