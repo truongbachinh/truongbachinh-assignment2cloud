@@ -40,7 +40,8 @@
 			<?php 
 			ob_start();
 			include('config.php');
-			include('menu.php');						
+			include('menu.php');	
+						
 			?>
 	</div>	
 
