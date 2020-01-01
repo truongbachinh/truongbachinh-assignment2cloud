@@ -6,7 +6,7 @@
 			<button type="submit" class="btn btn-success" name="searchButton">Search Toy</button>
 			<button type="submit" class="btn btn-success" name="cart">Your Cart</button>
 			<button type="submit" class="btn btn-success" name="loginWithGoogle">Login For Admin</button>&nbsp;
-			<button type="submit" class="btn btn-success" name="loginWithGoogle">Login For User</button>&nbsp;
+			
 		</form>
 	</div>
 </div>
